@@ -1,0 +1,6 @@
+animation: fadeIn 3s ease-in-out;
+
+.apropos{
+    flex:1 1 500px;
+    max-width:600px;
+}

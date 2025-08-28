@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style2.css" />
+        <title></title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Phox.html">Acceuil</a></li>
+                    <li><a href="A-propos.html">A propos</a></li>
+                    <li><a href="PORTFOL.html">Portfolio</a></li>
+                    <li><a href="Contac.html">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+       <section class="potfolio">
+    <h2 style="text-align: center;
+     font-family: 'Montserat',sans-serif;
+   font-size: 28px;
+   font-weight: bold;">Certaines de mes réalisations</h2>
+    <div class="portfoliog">
+      <div class="projet">
+        <img src="Projet1.png" alt="Projet 3" onclick="afficheEnGrand(this)">
+        <h3>Design de logo</h3>
+      </div>
+      <div class="projet">
+<img src="Projet2.jpg" alt="Projet 2" onclick="afficheEnGrand(this)">
+  <h3>Affiche publicitaire</h3>
+      </div>
+  <div class="projet">
+<img src="Projet3.jpg" alt="Projet 2" onclick="afficheEnGrand(this)">
+  <h3>Identité visuelle</h3>
+      </div>
+      <div class="projet">
+<img src="Projet4.png" alt="Projet 2" onclick="afficheEnGrand(this)">
+  <h3>Carte d'invitation</h3>
+      </div>
+      <div class="projet">
+<img src="Projet5.png" alt="Projet 2" onclick="afficheEnGrand(this)">
+  <h3>Carte de voeux</h3>
+      </div>
+    </div>
+  </section>
+
+  <div id="popup" class="popup" onclick="fermerPopup()">
+    <span class="fermer">&times;</span>
+    <img id="img-popup" class="img-popup">
+  </div>
+  
+  <footer>
+    <p>© 2025 PHOX. Tous droits réservés.</p>
+  </footer>
+   <script>
+    function afficheEnGrand(img) {
+      const popup = document.getElementById("popup");
+      const imgPopup = document.getElementById("img-popup");
+      imgPopup.src = img.src;
+      popup.style.display = "flex";
+    }
+    function fermerPopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
