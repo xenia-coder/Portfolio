@@ -10,16 +10,7 @@ body{
     flex-direction:column;
     background: linear-gradient(to bottom ,#a8698400 ,#9e708c);
 }
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-    .galerie {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 @keyframes bouclelogo{
     0%,100%{
         transform: scale(1);
