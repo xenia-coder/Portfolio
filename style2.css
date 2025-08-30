@@ -58,7 +58,7 @@ flex-wrap:wrap;
 gap:40px;
 }
 .texte-acc {
-max-width: 500px;
+max-width: 100px;
 animation:fadeInUp 3.2s ease forwards;
 opacity: 20;
  animation-delay: 2s;
